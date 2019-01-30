@@ -3,12 +3,12 @@
 </head>
 
 ## Qualitative Results
-<video type="video/mp4" src="input_depth.mp4" poster="input_depth.jpg" width="329" height="237" controls preload></video>
-<video type="video/mp4" src="output_labels.mp4" poster="output_labels.jpg" width="329" height="237" controls preload></video>
+<video width="329" height="237" controls>
+  <source type="video/mp4" src="https://github.com/gmntu/semseg/blob/master/input_depth.mp4">
+</video>
 
 ## Datasets
 Examples of synthetic train set
-AAA
 
 
 Examples of synthetic test set
