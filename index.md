@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Semantic Segmentation of Depth Image using Fully Convolutional Network
 
 You can use the [editor on GitHub](https://github.com/gmntu/semseg/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
