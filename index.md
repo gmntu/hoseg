@@ -8,11 +8,11 @@
 </video>
 
 ## Datasets
-[Synthetic train set](https://github.com/gmntu/semseg/tree/master/dataset/train_syn)
+[Synthetic train set](https://github.com/gmntu/semseg/tree/master/dataset/train_syn) contains 10k images
 
-[Synthetic test set](https://github.com/gmntu/semseg/tree/master/dataset/test_syn)
+[Synthetic test set](https://github.com/gmntu/semseg/tree/master/dataset/test_syn) contains 1k images
 
-[Real test set](https://github.com/gmntu/semseg/tree/master/dataset/test_kv2)
+[Real test set](https://github.com/gmntu/semseg/tree/master/dataset/test_kv2) contains 1k images captured from a Kinect V2 camera
 
 Code snippet for loading and displaying images
 
@@ -42,9 +42,9 @@ cv2.waitKey(0)
 
 
 ## FCN Models
-
+To be updated
 
 ## Realtime Demo using Kinect V2
-
+To be updated
 
 
