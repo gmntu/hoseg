@@ -17,7 +17,10 @@ Examples of synthetic test set
 Examples of real test set
 
 
-Sample Codes to Display the images in dataset
+Code snippet for loading and displaying images
+'''
+
+'''
 
 
 ## FCN Models
