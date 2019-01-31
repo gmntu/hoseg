@@ -1,11 +1,5 @@
-<head>
-  <script src="http://api.html5media.info/1.1.8/html5media.min.js"></script>
-</head>
-
 ## Qualitative Results
-<video width="329" height="237" controls>
-  <source type="video/mp4" src="https://github.com/gmntu/semseg/blob/master/input_depth.mp4">
-</video>
+<iframe width="329" height="237" src="https://youtu.be/96pDNfH1yF0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Datasets
 [Synthetic train set](https://github.com/gmntu/semseg/tree/master/dataset/train_syn) contains 10k images
