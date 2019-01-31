@@ -1,5 +1,7 @@
 ## Qualitative Results
-<iframe width="329" height="237" src="https://youtu.be/96pDNfH1yF0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/96pDNfH1yF0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VxVRp63EwXA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Datasets
 [Synthetic train set](https://github.com/gmntu/semseg/tree/master/dataset/train_syn) contains 10k images
