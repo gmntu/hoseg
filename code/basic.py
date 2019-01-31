@@ -1,6 +1,9 @@
 import cv2
 import numpy as np
 
+name = 'train_syn'
+index = 0
+
 def convertLabel2Color(label):
     height, width = label.shape
     label_color = np.zeros((height, width,3), np.uint8)
@@ -15,8 +18,8 @@ def convertLabel2Color(label):
 
     return label_color
 
-depth = cv2.imread('../dataset/train_syn/depth/0000000.png', cv2.IMREAD_ANYDEPTH)
-label = cv2.imread('../dataset/train_syn/label/0000000.png', cv2.IMREAD_GRAYSCALE)
+depth = cv2.imread('../dataset/'+name+'/depth/'+str(index).zfill(7)+'.png', cv2.IMREAD_ANYDEPTH)
+label = cv2.imread('../dataset/'+name+'/label/'+str(index).zfill(7)+'.png', cv2.IMREAD_GRAYSCALE)
 
 cv2.imshow('depth', cv2.convertScaleAbs(depth, None, 255/1500, 0))
 cv2.imshow('label', convertLabel2Color(label))
