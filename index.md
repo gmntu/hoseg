@@ -8,18 +8,15 @@
 </video>
 
 ## Datasets
-Examples of synthetic train set
+[Synthetic train set](https://github.com/gmntu/semseg/tree/master/dataset/train_syn)
 
+[Synthetic test set](https://github.com/gmntu/semseg/tree/master/dataset/test_syn)
 
-Examples of synthetic test set
-
-
-Examples of real test set
-
+[Real test set](https://github.com/gmntu/semseg/tree/master/dataset/test_kv2)
 
 Code snippet for loading and displaying images
 
-'''
+```markdown
 	import cv2
 	import numpy as np
 
@@ -43,7 +40,7 @@ Code snippet for loading and displaying images
 	cv2.imshow('depth', cv2.convertScaleAbs(depth, None, 255/1500, 0))
 	cv2.imshow('label', convertLabel2Color(label))
 	cv2.waitKey(0)
-'''
+```
 
 
 ## FCN Models
