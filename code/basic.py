@@ -1,24 +1,3 @@
-<head>
-  <script src="http://api.html5media.info/1.1.8/html5media.min.js"></script>
-</head>
-
-## Qualitative Results
-<video width="329" height="237" controls>
-  <source type="video/mp4" src="https://github.com/gmntu/semseg/blob/master/input_depth.mp4">
-</video>
-
-## Datasets
-Examples of synthetic train set
-
-
-Examples of synthetic test set
-
-
-Examples of real test set
-
-
-Code snippet for loading and displaying images
-'''
 import cv2
 import numpy as np
 
@@ -42,13 +21,3 @@ label = cv2.imread('../dataset/train_syn/label/0000000.png', cv2.IMREAD_GRAYSCAL
 cv2.imshow('depth', cv2.convertScaleAbs(depth, None, 255/1500, 0))
 cv2.imshow('label', convertLabel2Color(label))
 cv2.waitKey(0)
-'''
-
-
-## FCN Models
-
-
-## Realtime Demo using Kinect V2
-
-
-
