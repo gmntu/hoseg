@@ -6,6 +6,8 @@
 ## Datasets
 [Synthetic train set](https://github.com/gmntu/semseg/tree/master/dataset/train_syn) contains 10k images
 
+[Synthetic train set (Fixed body shape)](https://github.com/gmntu/semseg/tree/master/dataset/train_fixbody_syn) contains 10k images
+
 [Synthetic test set](https://github.com/gmntu/semseg/tree/master/dataset/test_syn) contains 1k images
 
 [Real test set](https://github.com/gmntu/semseg/tree/master/dataset/test_kv2) contains 1k images captured from a Kinect V2 camera
@@ -35,7 +37,6 @@ cv2.imshow('depth', cv2.convertScaleAbs(depth, None, 255/1500, 0))
 cv2.imshow('label', convertLabel2Color(label))
 cv2.waitKey(0)
 ```
-
 
 ## FCN Models
 To be updated
