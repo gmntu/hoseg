@@ -1,16 +1,18 @@
 ## Qualitative Results
-<iframe width="560" height="315" src="https://www.youtube.com/embed/96pDNfH1yF0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/VxVRp63EwXA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+To be updated
 
 ## Datasets
-[Synthetic train set](https://github.com/gmntu/semseg/tree/master/dataset/train_syn) contains 10k images
+1) [Synthetic train set](https://github.com/gmntu/semseg/tree/master/dataset/train_syn) contains 10k images
 
-[Synthetic train set (Fixed body shape)](https://github.com/gmntu/semseg/tree/master/dataset/train_fixbody_syn) contains 10k images
+2) [Synthetic train set (Fixed body shape)](https://github.com/gmntu/semseg/tree/master/dataset/train_fixbody_syn) contains 10k images
 
-[Synthetic test set](https://github.com/gmntu/semseg/tree/master/dataset/test_syn) contains 1k images
+3) [Synthetic test set](https://github.com/gmntu/semseg/tree/master/dataset/test_syn) contains 1k images
 
-[Real test set](https://github.com/gmntu/semseg/tree/master/dataset/test_kv2) contains 1k images captured from a Kinect V2 camera
+4) [Real test set](https://github.com/gmntu/semseg/tree/master/dataset/test_kv2) contains 1k images captured from a Kinect V2 camera
+
+The Synthetic train set is used to train the FCN model.
+The Synthetic test set and Real test set are for evaluation.
+The Synthetic train set (Fixed body shape) is similar to the Synthetic train set except that all the human models have the same body shape. Its main purpose is to compare and show the improvement in FCN performance when the FCN is trained on 1) Synthetic train set with varying body shapes.
 
 Code snippet for loading and displaying images
 
@@ -22,10 +24,10 @@ def convertLabel2Color(label):
 	height, width = label.shape
 	label_color = np.zeros((height, width,3), np.uint8)
 	label_color[label == 1] = [255,255,0] # Cyan   -> Foreground Note BGR
-	label_color[label == 2] = [255,0,0]   # Blue   -> Right hand
-	label_color[label == 3] = [0,0,255]   # Red    -> Left hand
-	label_color[label == 4] = [255,0,255] # Violet -> Right Arm
-	label_color[label == 5] = [0,255,255] # Yellow -> Left Arm
+	label_color[label == 2] = [255,0,0]   # Blue   -> Left hand
+	label_color[label == 3] = [0,0,255]   # Red    -> Right hand
+	label_color[label == 4] = [255,0,255] # Violet -> Left Arm
+	label_color[label == 5] = [0,255,255] # Yellow -> Right Arm
 	label_color[label == 6] = [0,255,0]   # Green  -> Obj    
 	label_color[label == 7] = [9,127,255] # Orange -> Table    
 	return label_color
