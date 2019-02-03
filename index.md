@@ -1,5 +1,6 @@
 ## Qualitative Results
-To be updated
+Video is generated using the sample code at the bootom (Real-time demo using Kinect V2)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SNuUrp2QiqY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Datasets
 1) [Synthetic train set](https://github.com/gmntu/semseg/tree/master/dataset/train_syn) contains 10k images
@@ -43,7 +44,7 @@ cv2.waitKey(0)
 ## FCN Models
 To be updated
 
-## Realtime Demo using Kinect V2
+## Real-time Demo using Kinect V2
 To be updated
 
 
