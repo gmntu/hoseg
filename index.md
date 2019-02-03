@@ -5,7 +5,7 @@ Video is generated using the sample code (Real-time demo using Kinect V2)
 ## Datasets
 1) [Synthetic train set](https://github.com/gmntu/semseg/tree/master/dataset/train_syn) contains 10k images
 
-![Input depth](dataset/train_syn/depth/0000000.png=100x100)
+![Input depth][100x100](dataset/train_syn/depth/0000000.png)
 
 2) [Synthetic train set (Fixed body shape)](https://github.com/gmntu/semseg/tree/master/dataset/train_fixbody_syn) contains 10k images
 
