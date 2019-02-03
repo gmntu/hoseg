@@ -1,6 +1,6 @@
 ## Qualitative Results
-Video is generated using the sample code at the bootom (Real-time demo using Kinect V2)
-<iframe width="560" height="315" src="https://www.youtube.com/embed/SNuUrp2QiqY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+Video is generated using the sample code (Real-time demo using Kinect V2)
+<iframe width="560" height="560" src="https://www.youtube.com/embed/SNuUrp2QiqY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Datasets
 1) [Synthetic train set](https://github.com/gmntu/semseg/tree/master/dataset/train_syn) contains 10k images
