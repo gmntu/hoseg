@@ -5,11 +5,11 @@ Video is generated using the sample code (Real-time demo using Kinect V2)
 ## Datasets
 1) [Synthetic train set](https://github.com/gmntu/semseg/tree/master/dataset/train_syn) contains 10,000 images for training the FCN model.
 
-2) [Synthetic test set](https://github.com/gmntu/semseg/tree/master/dataset/test_syn) contains 1000 images for evaluation
+2) [Synthetic test set](https://github.com/gmntu/semseg/tree/master/dataset/test_syn) contains 1000 images for evaluation.
 
-3) [Real test set](https://github.com/gmntu/semseg/tree/master/dataset/test_kv2) contains 1000 images captured from a Kinect V2 RGBD camera for evaluation
+3) [Real test set](https://github.com/gmntu/semseg/tree/master/dataset/test_kv2) contains 1000 images captured from a Kinect V2 RGBD camera for evaluation.
 
-4) [Synthetic train set (Fixed body shape)](https://github.com/gmntu/semseg/tree/master/dataset/train_fixbody_syn) contains 10,000 images. It is similar to 1) Synthetic train set except that all the human models have the same body shape. Its main purpose is to compare and show the improvement in FCN performance when the FCN is trained on 1) Synthetic train set with varying body shapes.
+4) [Synthetic train set (Fixed body shape)](https://github.com/gmntu/semseg/tree/master/dataset/train_fixbody_syn) contains 10,000 images that is similar to [Synthetic train set](https://github.com/gmntu/semseg/tree/master/dataset/train_syn), except that all the human models have the same body shape. Its main purpose is to compare and show the improvement in FCN performance when the FCN is trained on [Synthetic train set](https://github.com/gmntu/semseg/tree/master/dataset/train_syn) with varying body shapes.
 
 
 Code snippet for loading and displaying images
@@ -41,7 +41,7 @@ cv2.waitKey(0)
 ## FCN Models
 [Pytorch Implementation](https://github.com/gmntu/hoseg/blob/master/code/model.py)
 
-Trained FCN weights (To be updated)
+[Trained FCN weights](https://github.com/gmntu/hoseg/blob/master/code/model_FCN_NEW.pkl)
 
 ## Real-time Demo using Kinect V2
 [kinect.py](https://github.com/gmntu/hoseg/blob/master/code/kinect.py)
