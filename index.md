@@ -12,7 +12,9 @@ Video is generated using the sample code (Real-time demo using Kinect V2)
 4) [Real test set](https://github.com/gmntu/semseg/tree/master/dataset/test_kv2) contains 1k images captured from a Kinect V2 camera
 
 The Synthetic train set is used to train the FCN model.
+
 The Synthetic test set and Real test set are for evaluation.
+
 The Synthetic train set (Fixed body shape) is similar to the Synthetic train set except that all the human models have the same body shape. Its main purpose is to compare and show the improvement in FCN performance when the FCN is trained on 1) Synthetic train set with varying body shapes.
 
 Code snippet for loading and displaying images
@@ -27,7 +29,7 @@ def convertLabel2Color(label):
 	label_color[label == 1] = [255,255,0] # Cyan   -> Foreground Note BGR
 	label_color[label == 2] = [255,0,0]   # Blue   -> Left hand
 	label_color[label == 3] = [0,0,255]   # Red    -> Right hand
-	label_color[label == 4] = [255,0,255] # Violet -> Left Arm
+	label_color[label == 4] = [255,0,255] # Magenta-> Left Arm
 	label_color[label == 5] = [0,255,255] # Yellow -> Right Arm
 	label_color[label == 6] = [0,255,0]   # Green  -> Obj    
 	label_color[label == 7] = [9,127,255] # Orange -> Table    
@@ -42,9 +44,8 @@ cv2.waitKey(0)
 ```
 
 ## FCN Models
-To be updated
+[Pytorch Implementation](https://github.com/gmntu/hoseg/blob/master/code/model.py)
+Trained FCN weights (To be updated)
 
 ## Real-time Demo using Kinect V2
-To be updated
-
-
+[kinect.py](https://github.com/gmntu/hoseg/blob/master/code/kinect.py)
