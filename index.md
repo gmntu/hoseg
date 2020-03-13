@@ -45,3 +45,16 @@ cv2.waitKey(0)
 
 ## Real-time Demo using Kinect V2
 [kinect.py](https://github.com/gmntu/hoseg/blob/master/code/kinect.py)
+
+
+## Citation
+If you find this work useful, you may consider citing this [work](https://doi.org/10.1109/EMBC.2019.8857700):
+```
+@inproceedings{hoseg:2019,
+  title = {Hand and Object Segmentation from Depth Image using Fully Convolutional Network},
+  author = {Guan Ming, Lim and Prayook, Jatesiktat and Christopher Wee Keong, Kuah and Wei Tech, Ang},
+  booktitle = {41st Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)},
+  year = {2019}
+}
+```
+
