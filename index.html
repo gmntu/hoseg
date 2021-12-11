@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Hoseg.">
+  <meta name="keywords" content="hand object segmentation">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hand and Object Segmentation from Depth Image using Fully Convolutional Network</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+
+
+<!-- Project title, author's name and affiliation, link to paper, video, code and data-->
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Hand and Object Segmentation from Depth Image using Fully Convolutional Network</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="http://gmntu.github.io/">Guan Ming Lim</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.ntu.edu.sg/rris/about-us/our-people/researchers/researcher-staff/dr-prayook-jetesiktat">Prayook Jatesiktat</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.ntu.edu.sg/rris/about-us/our-people/researchers/researcher-staff/christopher-kuah-wee-keong">Christopher Wee Keong Kuah</a><sup>2</sup>
+            </span>
+            <span class="author-block">
+              <a href="https://dr.ntu.edu.sg/cris/rp/rp00218">Wei Tech Ang</a><sup>1</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Nanyang Technological University,</span>
+            <span class="author-block"><sup>2</sup>Centre for Advanced Rehabilitation Therapeutics</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://doi.org/10.1109/EMBC.2019.8857700"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=SNuUrp2QiqY"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/gmntu/hoseg"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video -->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video id="teaser" autoplay muted loop height="100%">
+        <source src="https://user-images.githubusercontent.com/47173496/145682324-3c4084d6-be0a-4075-a6b0-3326126b630b.mp4"
+                type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        Real-time segmentation of hand (red / blue) and object (green) from depth image.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Semantic segmentation is an important step for hand and object tracking as subsequent tracking algorithms depend heavily on the accuracy of the segmented hand and object.
+            However, current methods for hand and object segmentation are limited in the number of semantic labels, and lack of a large scale annotated dataset to train an end-to-end deep neural network for semantic segmentation.
+            Thus, in this work, we present a framework for generating a publicly available synthetic dataset, that is targeted for upper limb rehabilitation involving hand-object interaction and uses it to train our proposed deep neural network.
+            Experimental results show that even though the network is trained on synthetic depth images, it is able to achieve a mean intersection over union (mIoU) of 70.4\% when tested on real depth images.
+            Furthermore, the inference time of the proposed network takes around 6 ms on a GPU, thus making it suitable for real-time applications.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract -->
+
+    <!-- Method -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Method</h2>
+        <div class="content has-text-justified">
+          <img src="image/synthetic_data.png" width="1000" height="274" />
+          <p>
+            We aim to generate realistic synthetic depth images of a human model <a href="https://mano.is.tue.mpg.de/">(SMPL+H)</a> grasping objects and performing upper limb movements such as lifting, pouring and reaching actions.
+          </p>
+          <img src="image/fcn_model.png" width="500" height="500" />
+          <p>
+            Our proposed Fully Convolutional Network (FCN) is inspired by Taylor et al. work on <a href="https://dl.acm.org/doi/10.1145/3130800.3130853">Articulated distance fields for ultra-fast tracking of hands interacting</a>. The network is capable of fast per-pixel classification of depth images into eight different classes: (1) black for background/invalid pixel, (2) cyan for foreground, (3) blue for left hand, (4) red for right hand, (5) magenta for left forearm, (6) yellow for right forearm, (7) green for objects and (8) orange for table.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Method -->
+
+    <!-- Results -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Results</h2>
+        <div class="content has-text-justified">
+          <img src="image/qualitative_results.png" width="1000" height="562" />
+        </div>
+      </div>
+    </div>
+    <!--/ Results -->
+    
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{hoseg:2019,
+      title     = {Hand and Object Segmentation from Depth Image using Fully Convolutional Network},
+      author    = {Guan Ming, Lim and Prayook, Jatesiktat and Christopher Wee Keong, Kuah and Wei Tech, Ang},
+      booktitle = {41st Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)},
+      year      = {2019}
+    }
+    </code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This webpage is built with the template from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
