@@ -1,8 +1,21 @@
-## Qualitative Results
-Video is generated using the sample code (Real-time demo using Kinect V2)
-<iframe width="560" height="560" src="https://www.youtube.com/embed/SNuUrp2QiqY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+# Hand and Object Segmentation from Depth Image using Fully Convolutional Network
 
-## Datasets
+This repo contains the dataset and sample code for the paper: Hand and Object Segmentation from Depth Image using Fully Convolutional Network.
+
+[**Paper**](https://doi.org/10.1109/EMBC.2019.8857700) | [**Project**](https://gmntu.github.io/hoseg/) | [**Video**](https://www.youtube.com/watch?v=SNuUrp2QiqY)
+
+
+If you find our code or paper useful, please consider citing
+```BibTeX
+@inproceedings{hoseg:2019,
+  title     = {Hand and Object Segmentation from Depth Image using Fully Convolutional Network},
+  author    = {Guan Ming, Lim and Prayook, Jatesiktat and Christopher Wee Keong, Kuah and Wei Tech, Ang},
+  booktitle = {41st Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)},
+  year      = {2019}
+}
+```
+
+## Overview of dataset
 1) [Synthetic train set](https://github.com/gmntu/semseg/tree/master/dataset/train_syn) contains 10,000 images for training the FCN model.
 
 2) [Synthetic test set](https://github.com/gmntu/semseg/tree/master/dataset/test_syn) contains 1000 images for evaluation.
@@ -12,9 +25,9 @@ Video is generated using the sample code (Real-time demo using Kinect V2)
 4) [Synthetic train set (Fixed body shape)](https://github.com/gmntu/semseg/tree/master/dataset/train_fixbody_syn) contains 10,000 images that is similar to [Synthetic train set](https://github.com/gmntu/semseg/tree/master/dataset/train_syn), except that all the human models have the same body shape. Its main purpose is to compare and show the improvement in FCN performance when the FCN is trained on [Synthetic train set](https://github.com/gmntu/semseg/tree/master/dataset/train_syn) with varying body shapes.
 
 
-Code snippet for loading and displaying images
+Code snippet for loading and displaying dataset
 
-```markdown
+```python
 import cv2
 import numpy as np
 
@@ -38,23 +51,8 @@ cv2.imshow('label', convertLabel2Color(label))
 cv2.waitKey(0)
 ```
 
-## FCN Models
-[Pytorch Implementation](https://github.com/gmntu/hoseg/blob/master/code/model.py)
+## Fully Convolutional Network (FCN) model
+Refer to [model](https://github.com/gmntu/hoseg/blob/master/code/model.py) and the [trained weights](https://github.com/gmntu/hoseg/blob/master/code/model_FCN_NEW.pkl)
 
-[Trained FCN weights](https://github.com/gmntu/hoseg/blob/master/code/model_FCN_NEW.pkl)
-
-## Real-time Demo using Kinect V2
-[kinect.py](https://github.com/gmntu/hoseg/blob/master/code/kinect.py)
-
-
-## Citation
-If you find this work useful, you may consider citing this [work](https://doi.org/10.1109/EMBC.2019.8857700):
-```
-@inproceedings{hoseg:2019,
-  title = {Hand and Object Segmentation from Depth Image using Fully Convolutional Network},
-  author = {Guan Ming, Lim and Prayook, Jatesiktat and Christopher Wee Keong, Kuah and Wei Tech, Ang},
-  booktitle = {41st Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)},
-  year = {2019}
-}
-```
-
+## Real-time demo using Kinect V2
+Refer to [kinect.py](https://github.com/gmntu/hoseg/blob/master/code/kinect.py)
