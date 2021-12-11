@@ -1,11 +1,13 @@
 # Hand and Object Segmentation from Depth Image using Fully Convolutional Network
 
+![](dataset/sample.png)
+
 This repo contains the dataset and sample code for the paper: Hand and Object Segmentation from Depth Image using Fully Convolutional Network.
 
 [**Paper**](https://doi.org/10.1109/EMBC.2019.8857700) | [**Project**](https://gmntu.github.io/hoseg/) | [**Video**](https://www.youtube.com/watch?v=SNuUrp2QiqY)
 
 
-If you find our code or paper useful, please consider citing
+If you find our work useful, please consider citing
 ```BibTeX
 @inproceedings{hoseg:2019,
   title     = {Hand and Object Segmentation from Depth Image using Fully Convolutional Network},
